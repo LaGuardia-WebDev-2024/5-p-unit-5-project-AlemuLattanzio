@@ -9,24 +9,172 @@ Select ONE Additional Feature to Add
 [ no ] Feature 1 - Flexbox
 [ no ] Feature 2 - Flip Card
 [ no ] Feature 3 - Navbar
-[ no ] Feature 4 - Shaking Animation
+[ yes ] Feature 4 - Shaking Animation
 [ no ] Feature 5 - Gradient Background
 [ no ] Feature 6 - Spotify Playlist
 -->
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Unit 5 Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bokor&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
 
-<head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
+    <style>
 
-  </style>
-</head>
-<body>
+            body {
+              font-family: Georgia, Garamond, serif ;
+              font-size: 17px
+            }
+                h1 {
+                  color: rgb(0,55,96);
+                  font-family: "Bokor", system-ui;
+                  padding: 10px
+                }
 
- 
+                body {
+                  color: rgb(212, 201, 177);
+                  border: 5px solid navy;
+                  border-radius: 20px 40px
+            }
+            h2 {
+              font-size: 2em;
+              font-family: "Bokor", system-ui;
+              color: rgb(0,55,96);
+            }
 
-</body>
+            h3 {
+              font-size: 2em;
+              font-family: "Bokor", system-ui;
+              color: rgb(0,55,96);
+            }
+                .activities {
+                  background color: blue;
+                  padding: 10px
+                }
+
+                .info {
+                  background color: blue;
+                  padding: 10px
+                }
+
+                #Fun-Facts {
+                  background color: green;
+                }
+
+                #Things {
+                background color: green;
+                  padding: 10px
+                }
+
+      #Facts {
+              background: rgb(230, 230, 230);
+        width: 80%;
+        height: 200px;
+        overflow: auto;
+        border-radius: 30px;
+        padding: 20px;
+        margin-left: 10px;
+            }
+
+                img {
+                  border-radius: 40px;
+                  padding:10px
+                }
+
+          img:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+
+          .Rome {
+            color: brown;
+          }
+    </style>
+  </head>
+  <body>
+    <h1>Visit Rome The Eternal City</h1>
+
+    <img />
+
+    <p class="info">
+      <span class="Rome">Rome</span>, the capital of Italy is a city with lots
+      of importance in history and culture in Europe. It was once the center of
+      the ancient Roman empire whos power and influence has left it's mark today
+      which can be seen all throughout the city of Rome. During ancient times
+      Rome it was called the "Eternal City" as it was believed that it would
+      always remain standing no matter what happpened to the rest of the world.
+    </p>
+
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQDlT2_0afasP6tQ5u-zih0jVdn4_TNcm2Q&s"
+      width="300"
+    />
+
+    <div id="Facts">
+      <h2 id="Fun-Facts">Fun Facts</h2>
+
+      <ul class="info">
+        <li>Rome has over 280 fountains and over 900 churches</li>
+        <li>
+          Nearly 700,000 euros worth of coins are tossed into Rome's Trevi
+          Fountain each year.
+        </li>
+        <li>
+          The Romans had built a road network of 53,000 miles by the early
+          fourth century, giving birth to the saying “All roads lead to Rome.”
+        </li>
+        <li>
+          The mascot of Rome is a she-wolf that cared for brothers Romulus and
+          Remus, the mythological founders of Rome.
+        </li>
+        <li>
+          Rome’s first university, La Sapienza, established in 1303 AD, is the
+          largest in Europe and the second largest in the world.
+        </li>
+        <li>Rome has a museum dedicated entirely to pasta.</li>
+        <li>
+          St Peter’s Basilica inside Vatican City is the largest church in the
+          world.
+        </li>
+      </ul>
+    </div>
+
+    <h3 id="Things">Things to do</h3>
+
+    <p class="activities">Take a tour of the expansive Roman Colosseum</p>
+
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQRJwTdkZnA7JUH1rqdZxi5thDobk4f6K29Q&s"
+      width="200"
+    />
+    <p class="activities">
+      Tour the Vatican museum, Sistine chapel or St. Peter's Basilica
+    </p>
+
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5XAF6r7mY87v5S9cVlt1r_ki86MEh5n5ISA&s"
+      width="200"
+    />
+  </body>
 </html>
